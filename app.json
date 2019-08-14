@@ -1,9 +1,8 @@
 {
   "pages": [
-    "pages/spy/spy",
-    "pages/index/index"
-   
-
+    "pages/spynav/spynav",
+    "pages/index/index",
+    "pages/spy/spy"
   ],
   "window": {
     "backgroundTextStyle": "dark",
@@ -12,7 +11,6 @@
     "navigationBarTitleText": "test",
     "navigationBarTextStyle": "black"
   },
- 
   "networkTimeout": {
     "request": 35000
   },

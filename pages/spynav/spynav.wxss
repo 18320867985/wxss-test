@@ -1,0 +1,49 @@
+ .spy{
+
+ }
+ .spy-nav{
+   
+    display: flex;
+    justify-content: space-between;
+   align-items: stretch;
+    box-sizing: border-box;
+  
+    height: 80rpx;
+   background: #fff;
+   box-shadow: 0 1px 4px rgba(0,0,0,.075);
+ }
+  .spy-nav>view{
+    flex: 1;
+    text-align: center;
+    transition: all .4s; 
+    line-height: 80rpx;
+  }
+
+  .spy-nav>view.active{
+    color:#fff;
+    background: red;
+  }
+ 
+  .spy-cnt-tl{
+     background: #ddd;
+      padding: 20rpx;
+  }
+
+/*--滚动菜单-- */
+ .spy-nav-pwr{}
+
+  .spy-nav-bd.active{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+   
+
+   
+  }
+  scroll-view{
+ border: 1px solid red;
+    background: #fff;
+  }
