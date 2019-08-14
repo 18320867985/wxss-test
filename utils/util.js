@@ -88,7 +88,6 @@ let list = {
         }
     },
 
-
     min: function (data, fn) {
         data = data || [];
         if (data.constructor !== Array) {
@@ -722,6 +721,19 @@ function getElement(el,fn){
   });
 }
 
+function queryAll(el, fn) {
+  el = el || "";
+  const query = wx.createSelectorQuery();
+  query.selectAll(el).boundingClientRect();
+  query.selectViewport().scrollOffset();
+
+  query.exec((res) => {
+    if (typeof fn === "function") {
+      fn(res);
+    }
+  });
+}
+
 export {
     list,
     url,
@@ -730,5 +742,6 @@ export {
     sessionStorage,
     toDate,
     computerDay,
-    getElement
+    getElement,
+    queryAll
 }

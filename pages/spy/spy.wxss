@@ -8,18 +8,26 @@
     right: 0;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+   align-items: stretch;
     box-sizing: border-box;
-    padding: 20rpx;
+  
     height: 80rpx;
    background: #fff;
    box-shadow: 0 1px 4px rgba(0,0,0,.075);
  }
   .spy-nav>view{
-     flex: 1;
-      text-align: center;
+    flex: 1;
+    text-align: center;
+    transition: all .4s; 
+    line-height: 80rpx;
   }
 
   .spy-nav>view.active{
-    color:red;
+    color:#fff;
+    background: red;
+  }
+ 
+  .spy-cnt-tl{
+     background: #ddd;
+      padding: 20rpx;
   }
