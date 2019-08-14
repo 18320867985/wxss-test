@@ -1,0 +1,22 @@
+{
+  "pages": [
+    "pages/index/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "backgroundColor": "#f2f2f2",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "test",
+    "navigationBarTextStyle": "black"
+  },
+ 
+  "networkTimeout": {
+    "request": 35000
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "sitemapLocation": "sitemap.json"
+}
