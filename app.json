@@ -1,6 +1,9 @@
 {
   "pages": [
+    "pages/spy/spy",
     "pages/index/index"
+   
+
   ],
   "window": {
     "backgroundTextStyle": "dark",

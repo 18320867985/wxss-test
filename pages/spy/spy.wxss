@@ -1,0 +1,25 @@
+ .spy{
+ padding-top: 80rpx;
+ }
+ .spy-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20rpx;
+    height: 80rpx;
+   background: #fff;
+   box-shadow: 0 1px 4px rgba(0,0,0,.075);
+ }
+  .spy-nav>view{
+     flex: 1;
+      text-align: center;
+  }
+
+  .spy-nav>view.active{
+    color:red;
+  }
