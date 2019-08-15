@@ -17,7 +17,10 @@ Page({
     // nav元素的offsettop
     navTop: 0,
     navFixed:false,
-    windowHeight:0
+    windowHeight:0,
+
+    // scrollView是否滚动
+    scrollViewTo:false
 
 
   },
@@ -153,6 +156,23 @@ Page({
       duration: 400
     })
 
-  }
+  },
+  scroll: function (e) {
+    //console.log(e);
+    var top = e.detail.scrollTop;
+
+    if (top<=1) {
+      this.setData({
+        scrollViewTo: false
+      });
+
+    } else {
+      this.setData({
+        scrollViewTo: true
+      });
+    }
+
+  },
+
 
 })

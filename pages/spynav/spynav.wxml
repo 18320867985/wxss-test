@@ -1,7 +1,8 @@
 <view class="page">
   <view class="spy">
     <view class="spy-cnt">
-      <view class="spy-cnt-tl" id="lv1">商品</view>
+     
+      <view>======11111111========</view>
       <view>==============</view>
       <view>==============</view>
       <view>==============</view>
@@ -43,9 +44,9 @@
       <view>==============</view>
       <view>==============</view>
       <view>==============</view>
+      <view>=======22222222=======</view>
       <view>==============</view>
       <view>==============</view>
-      <view class="spy-cnt-tl" id="lv2">详情</view>
       <view>==============</view>
       <view>==============</view>
       <view>==============</view>
@@ -72,10 +73,7 @@
       <view>==============</view>
       <view>==============</view>
       <view>==============</view>
-      <view>==============</view>
-      <view>==============</view>
-      <view class="spy-cnt-tl" id="lv3">评价</view>
-      <view>==============</view>
+      <view>=======333333=======</view>
       <view>==============</view>
       <view>==============</view>
       <view>==============</view>
@@ -112,138 +110,157 @@
       <view>==============</view>
 
       <!--滚动菜单-->
-      <view class="spy-nav-pwr" style="height:{{windowHeight}}px">
-        <view class="spy-nav-bd">
-          <view class="spy-nav" id="nav">
-            <view class="{{spyActiveId=='lv1'?'active':''}}" bindtap='switchTab' data-id="lv1">商品</view>
-            <view class="{{spyActiveId=='lv2'?'active':''}}" bindtap='switchTab' data-id="lv2">详情</view>
-            <view class="{{spyActiveId=='lv3'?'active':''}}" bindtap='switchTab' data-id="lv3">评价</view>
-          </view>
-
-          <scroll-view scroll-y="{{navFixed}}"  style="height:{{ windowHeight-40}}px" >
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>---------7--------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>--------7---------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>---------7--------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-             <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>---------7--------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>--------7---------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>---------7--------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-             <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>---------7--------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>--------7---------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>---------7--------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-            <view>-----------------</view>
-          </scroll-view>
+      <view class="spy-nav-pwr"  style="overflow-y:{{navFixed?'scroll':'hidden'}};height:{{ windowHeight}}px">
+      <view class="spy-nav {{navFixed?'fixed':''}}" id="nav" catchtouchmove="{{scrollViewTo?'true':''}}">
+          <view class="{{spyActiveId=='lv1'?'active':''}}" bindtap='switchTab' data-id="lv1">商品</view>
+          <view class="{{spyActiveId=='lv2'?'active':''}}" bindtap='switchTab' data-id="lv2">详情</view>
+          <view class="{{spyActiveId=='lv3'?'active':''}}" bindtap='switchTab' data-id="lv3">评价</view>
         </view>
+         <scroll-view scroll-y="{{navFixed}}" style="height:{{ windowHeight-navHeight}}px"   bindscroll="scroll">
+         <view class="spy-cnt-tl" id="lv1">商品</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+         {{scrollViewTo}}
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>---------7--------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>--------7---------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>---------7--------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+         <view class="spy-cnt-tl" id="lv2">详情</view>
+        <view>-----------------</view>
+        <view>---------7--------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>--------7---------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>---------7--------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>---------7--------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>--------7---------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>---------7--------</view>
+        <view>-----------------</view>
+         <view class="spy-cnt-tl" id="lv3">评价</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+          <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+        <view>-----------------</view>
+      </scroll-view>
       </view>
+     
+
 
     </view>
 

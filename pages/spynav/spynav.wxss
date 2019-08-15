@@ -2,7 +2,6 @@
 
  }
  .spy-nav{
-   
     display: flex;
     justify-content: space-between;
    align-items: stretch;
@@ -22,6 +21,7 @@
   .spy-nav>view.active{
     color:#fff;
     background: red;
+    
   }
  
   .spy-cnt-tl{
@@ -30,20 +30,13 @@
   }
 
 /*--滚动菜单-- */
- .spy-nav-pwr{}
-
-  .spy-nav-bd.active{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 1;
-   
-
-   
-  }
+spy-nav-pwr{
+    position: relative;
+}
+ 
   scroll-view{
- border: 1px solid red;
+    position: relative;
+    border: 1px solid red;
+    box-sizing: border-box;
     background: #fff;
   }
